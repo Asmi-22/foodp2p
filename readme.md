@@ -1,22 +1,120 @@
-# Getting Started
+#  Smart Food Procurement System (FoodP2P)
 
-Welcome to your new CAP project.
+## Project Overview
 
-It contains these folders and files, following our recommended project layout:
+FoodP2P is a Smart Procurement System built using **SAP CAP (Cloud Application Programming Model)**.
+It simulates a simplified **Procure-to-Pay (P2P) cycle** for food inventory management.
 
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`readme.md` | this getting started guide
+The system helps track inventory, manage purchase requests and orders, and reduce food wastage.
 
-## Next Steps
 
-- Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start with your domain model, in a CDS file in `db/`
+## Objectives
 
-## Learn More
+* Track food inventory efficiently
+* Detect low stock automatically
+* Manage purchase requests and orders
+* Reduce food wastage using waste tracking
 
-Learn more at <https://cap.cloud.sap>.
+
+## Technology Stack
+
+* SAP CAP (Node.js)
+* SQLite (In-memory DB)
+* SAP Business Application Studio
+* OData V4 Services
+
+
+## System Architecture
+
+* **Database Layer** → Stores items, requests, orders, waste logs
+* **Service Layer** → Exposes APIs
+* **Application Layer** → Handles business logic
+
+
+## Procure-to-Pay Flow
+
+Items → Purchase Request → Purchase Order → Supplier
+
+
+## Entities
+
+### Items
+
+* ID
+* Name
+* Quantity
+* Expiry Date
+* Threshold
+
+### Purchase Requests
+
+* ID
+* Item ID
+* Quantity
+* Status
+
+### Purchase Orders
+
+* ID
+* Request ID
+* Supplier
+* Status
+
+### Waste Log
+
+* ID
+* Item ID
+* Quantity
+* Date
+
+
+## Data Storage
+
+Data is stored using CSV files:
+
+* food-Items.csv
+* food-PurchaseRequests.csv
+* food-PurchaseOrders.csv
+* food-WasteLog.csv
+
+
+## OData Services
+
+* `/odata/v4/food/Items`
+* `/odata/v4/food/PurchaseRequests`
+* `/odata/v4/food/PurchaseOrders`
+* `/odata/v4/food/WasteLog`
+
+
+## Features
+
+* Inventory tracking
+* Low stock detection
+* Procurement simulation
+* Waste monitoring
+
+
+## Screenshots
+
+(Add your SAP Fiori preview screenshots here)
+
+
+## Advantages
+
+* Reduces manual effort
+* Improves efficiency
+* Prevents shortages
+* Tracks wastage
+
+
+## Future Scope
+
+* AI-based demand prediction
+* Real-time SAP integration
+* Dashboard UI
+* Smart alerts
+
+## 👩‍💻 Author
+
+**Asmi Dutta**
+
