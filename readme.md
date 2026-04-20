@@ -94,9 +94,19 @@ Data is stored using CSV files:
 * Waste monitoring
 
 
-## Screenshots
+## 📸 Screenshots
 
-(Add your SAP Fiori preview screenshots here)
+### Items
+![Items](items.jpeg)
+
+### Purchase Requests
+![PR](purchaserequests.jpeg)
+
+### Purchase Orders
+![PO](purchaseorders.jpeg)
+
+### Waste Log
+![WasteLog](wastelog.jpeg)
 
 
 ## Advantages
