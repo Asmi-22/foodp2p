@@ -114,7 +114,7 @@ Data is stored using CSV files:
 * Dashboard UI
 * Smart alerts
 
-## 👩‍💻 Author
+## Author
 
 **Asmi Dutta**
 
