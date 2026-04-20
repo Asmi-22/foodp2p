@@ -1,0 +1,5 @@
+ID,name,quantity,expiryDate,threshold
+1,Rice,50,2026-12-31,10
+2,Milk,5,2026-05-01,8
+3,Bread,2,2026-04-25,5
+4,Vegetables,20,2026-04-28,10
